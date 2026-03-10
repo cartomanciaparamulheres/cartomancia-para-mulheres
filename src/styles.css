@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #060814;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 8%;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: rgba(246, 223, 162, 0.55);
+  box-shadow: 0 0 16px rgba(246, 223, 162, 0.45);
+}
