@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #05070f;
+}
+
+.ornament-line {
+  height: 1px;
+  width: 8rem;
+  background: linear-gradient(90deg, transparent, rgba(226, 193, 120, 0.95), transparent);
+}
+
+.cosmic-shell::before,
+.cosmic-shell::after {
+  content: '';
+  position: fixed;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 9999px;
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cosmic-shell::before {
+  top: -8rem;
+  right: -10rem;
+  background: radial-gradient(circle, rgba(226, 193, 120, 0.2), transparent 62%);
+}
+
+.cosmic-shell::after {
+  bottom: -9rem;
+  left: -11rem;
+  background: radial-gradient(circle, rgba(52, 88, 146, 0.24), transparent 66%);
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  right: 8%;
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: rgba(245, 222, 160, 0.6);
+  box-shadow: 0 0 14px rgba(245, 222, 160, 0.55);
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  inset: 1.25rem 2rem auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(226, 193, 120, 0.28), transparent);
+  pointer-events: none;
+}
