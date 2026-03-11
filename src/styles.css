@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,17 +16,47 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #060814;
+  background: #05070f;
+}
+
+.ornament-line {
+  height: 1px;
+  width: 7rem;
+  background: linear-gradient(90deg, transparent, rgba(226, 193, 120, 0.95), transparent);
+}
+
+.cosmic-shell::before,
+.cosmic-shell::after {
+  content: '';
+  position: fixed;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 9999px;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cosmic-shell::before {
+  top: -6rem;
+  right: -8rem;
+  background: radial-gradient(circle, rgba(226, 193, 120, 0.18), transparent 65%);
+}
+
+.cosmic-shell::after {
+  bottom: -7rem;
+  left: -9rem;
+  background: radial-gradient(circle, rgba(42, 74, 130, 0.2), transparent 65%);
 }
 
 section::before {
   content: '';
   position: absolute;
-  top: 24px;
-  right: 8%;
+  top: 26px;
+  right: 10%;
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background: rgba(246, 223, 162, 0.55);
-  box-shadow: 0 0 16px rgba(246, 223, 162, 0.45);
+  background: rgba(245, 222, 160, 0.6);
+  box-shadow: 0 0 14px rgba(245, 222, 160, 0.5);
 }

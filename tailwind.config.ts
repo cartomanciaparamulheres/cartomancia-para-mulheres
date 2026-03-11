@@ -6,28 +6,37 @@ export default {
     extend: {
       colors: {
         night: {
-          950: '#060814',
-          900: '#0A1022',
-          800: '#121A33'
+          950: '#05070F',
+          900: '#0B1226',
+          800: '#14203D',
+        },
+        celestial: {
+          700: '#1A315A',
+          500: '#2A4A82',
         },
         gold: {
-          300: '#F6DFA2',
-          400: '#DFC27A',
-          500: '#CFA85B',
-          600: '#A57D36'
+          300: '#F5DEA0',
+          400: '#E2C178',
+          500: '#CDA158',
+          600: '#9F7434',
         },
         mist: {
-          100: '#E8ECF8',
-          200: '#C9D2EA'
-        }
+          100: '#EEF2FF',
+          200: '#CFD9F5',
+          300: '#AAB8DF',
+        },
+      },
+      fontFamily: {
+        display: ['Cormorant Garamond', 'serif'],
       },
       boxShadow: {
-        glow: '0 0 30px rgba(223, 194, 122, 0.2)',
-        soft: '0 18px 60px rgba(6, 8, 20, 0.45)'
+        glow: '0 0 42px rgba(226, 193, 120, 0.22)',
+        soft: '0 20px 60px rgba(5, 7, 15, 0.52)',
+        edge: 'inset 0 0 0 1px rgba(226, 193, 120, 0.18)',
       },
       backgroundImage: {
-        'radial-depth': 'radial-gradient(circle at 20% 20%, rgba(26,36,72,0.55), transparent 45%), radial-gradient(circle at 75% 0%, rgba(207,168,91,0.16), transparent 35%), linear-gradient(180deg, #060814 0%, #0A1022 45%, #060814 100%)'
-      }
+        'radial-depth': 'radial-gradient(circle at 15% 0%, rgba(42,74,130,0.28), transparent 36%), radial-gradient(circle at 80% 10%, rgba(205,161,88,0.18), transparent 34%), linear-gradient(180deg, #05070F 0%, #0B1226 38%, #05070F 100%)',
+      },
     },
   },
   plugins: [],
